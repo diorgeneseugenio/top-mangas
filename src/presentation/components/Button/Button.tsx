@@ -1,12 +1,10 @@
-import React, { ReactChild } from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
 import { ButtonStyled, IButtonStyledProps } from './Button.styles'
 
-interface OwnProps extends IButtonStyledProps {
-  children: ReactChild
-}
-
-export const Button = (props: OwnProps) => {
+export const Button = (
+  props: ButtonHTMLAttributes<Element> & IButtonStyledProps
+) => {
   const { children } = props
 
   return <ButtonStyled {...props}>{children}</ButtonStyled>
