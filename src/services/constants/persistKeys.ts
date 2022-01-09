@@ -1,3 +1,4 @@
 export enum PersistKeys {
-  favoriteMangas = 'favorite-mangas'
+  favoriteMangas = 'favorite-mangas',
+  theme = 'theme'
 }

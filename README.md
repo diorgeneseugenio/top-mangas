@@ -20,6 +20,7 @@ These are the steps to install and run the application:
 ## Demonstration
 
 ![top-mangas](./public/gifs/top-mangas.gif)
+![top-mangas-theme](./public/gifs/top-mangas-theme.gif)
 
 ## Authors
 
