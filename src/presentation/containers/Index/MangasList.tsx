@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { MangaItem } from './MangaItem'
 import { useFetchTopMangas } from '@/services/state/server/query/useFetchTopMangas'
 
 export const MangasList = () => {
@@ -10,11 +11,9 @@ export const MangasList = () => {
   }
 
   return (
-    <div>
+    <div className="grid grid-cols-6 gap-6">
       {mangas?.map((manga) => (
-        <div key={manga.id}>
-          <span>{manga.title}</span>
-        </div>
+        <MangaItem key={manga.id} manga={manga} />
       ))}
     </div>
   )
