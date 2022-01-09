@@ -31,7 +31,8 @@
     "react-hooks",
     "@typescript-eslint",
     "tailwindcss",
-    "unused-imports"
+    "unused-imports",
+    "import"
   ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
@@ -54,6 +55,25 @@
         "args": "after-used",
         "argsIgnorePattern": "^_"
       }
+    ],
+    "import/order": [
+      "error",
+      {
+				"groups": ["builtin", "external", "internal"],
+				"pathGroups": [
+					{
+						"pattern": "react",
+						"group": "external",
+						"position": "before"
+					}
+				],
+				"pathGroupsExcludedImportTypes": ["react"],
+				"newlines-between": "always",
+				"alphabetize": {
+					"order": "asc",
+					"caseInsensitive": true
+				}
+			}
     ]
   }
 }
