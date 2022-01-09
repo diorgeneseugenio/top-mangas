@@ -13,7 +13,7 @@ export const MangaItem = ({ manga }: OwnProps) => {
       <img
         src={manga.image}
         alt={manga.title}
-        className="w-full h-96 rounded"
+        className="w-full h-96 rounded blur-sm"
       />
       <p className="mt-2 h-20 text-white whitespace-normal">{manga.title}</p>
       <Button variant="primary">Favorite</Button>

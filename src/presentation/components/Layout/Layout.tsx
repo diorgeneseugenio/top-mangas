@@ -1,7 +1,7 @@
-import React, { ReactChild } from 'react'
+import React, { ReactNode } from 'react'
 
 interface OwnProps {
-  children: ReactChild
+  children: ReactNode
 }
 
 export const Layout = ({ children }: OwnProps) => {
