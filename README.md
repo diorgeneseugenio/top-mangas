@@ -1,66 +1,26 @@
-# React Tailwindcss Boilerplate build with Vite
+# Top Mangas
 
-This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
+This project was developed to test new tools as Vite and Zustand. The task consumes an API with the fifty most popular mangas and presents this information. Another feature is the possibility to favorite the mangas as you prefer.
 
-## What is inside?
+## Stack
 
-This project uses many tools like:
+**Front-end:** React, TailwindCSS, Styled-Components, React Router, Vite, Zustand, React Query, ESLint and Husky
 
-- [ReactJS](https://reactjs.org)
-- [Vite](https://vitejs.dev)
-- [TypeScript](https://www.typescriptlang.org)
-- [Jest](https://jestjs.io)
-- [Testing Library](https://testing-library.com)
-- [Tailwindcss](https://tailwindcss.com)
-- [Eslint](https://eslint.org)
-- [Prettier](https://prettier.io)
+## Install and Run
 
-## Getting Started
-
-### Install
-
-Create the project.
+These are the steps to install and run the application:
 
 ```bash
-npx degit joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate my-app
+  git clone git@github.com:diorgeneseugenio/top-mangas.git
+  cd top-mangas
+  yarn
+  yarn dev
 ```
 
-Access the project directory.
+## Demonstration
 
-```bash
-cd my-app
-```
+![top-mangas](./public/gifs/top-mangas.gif)
 
-Install dependencies.
+## Authors
 
-```bash
-npm install
-```
-
-Serve with hot reload at http://localhost:3000.
-
-```bash
-npm run dev
-```
-
-### Lint
-
-```bash
-npm run lint
-```
-
-### Build
-
-```bash
-npm run build
-```
-
-### Test
-
-```bash
-npm run test
-```
-
-## License
-
-This project is licensed under the MIT License.
+- [@diorgeneseugenio](https://www.github.com/diorgeneseugenio)

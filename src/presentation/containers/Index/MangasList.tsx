@@ -1,15 +1,20 @@
 import React from 'react'
 
 import { MangaItem } from './MangaItem'
+import { Loader } from '@/presentation/components/Loader/Loader'
 import { useFavorites } from '@/services/state/client/hooks/useFavorites'
 import { useFetchTopMangas } from '@/services/state/server/query/useFetchTopMangas'
 
 export const MangasList = () => {
-  const { data: mangas } = useFetchTopMangas()
+  const { data: mangas, isLoading, isFetching } = useFetchTopMangas()
   const { mangasFavoriteIds, showOnlyFavorites } = useFavorites()
 
   if (!mangas) {
     return null
+  }
+
+  if (isLoading || isFetching) {
+    return <Loader />
   }
 
   return (
