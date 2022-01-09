@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { render } from 'react-dom'
 import 'tailwindcss/tailwind.css'
-import App from 'components/App'
+import { IndexPage } from './presentation/pages'
 
 render(
   <StrictMode>
-    <App />
+    <IndexPage />
   </StrictMode>,
   document.getElementById('root')
 )
